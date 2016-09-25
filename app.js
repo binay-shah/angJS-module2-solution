@@ -23,7 +23,7 @@
   function AlreadyBoughtShoppingController(ShoppingListCheckOffService){
     var boughtList = this;
     boughtList.items = ShoppingListCheckOffService.getBoughtItems();
-    boughtList.message =  ShoppingListCheckOffService.getBoughtItemsMessage(); 
+
   }
 
 
@@ -73,12 +73,6 @@
 
     }
 
-    this.getBoughtItemsMessage = function(){
-      if(boughtItems.length == 0)
-        return "Nothing bought yet.";
-      else {
-        return "";
-      }
-    }
+    
   }
 })();
